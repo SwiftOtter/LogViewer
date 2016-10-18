@@ -1,0 +1,19 @@
+{
+    "name": "swiftotter/logviewer",
+    "description": "SwiftOtter's log viewer for development purposes",
+    "version": "dev-master",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "phpunit/phpunit": "^4.8"
+    },
+    "authors":[
+        {
+            "name": "Joseph Maxwell",
+            "email": "joseph@swiftotter.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "root"
+    }
+}

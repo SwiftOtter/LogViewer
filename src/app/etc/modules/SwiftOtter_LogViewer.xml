@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <SwiftOtter_LogViewer>
+            <active>true</active>
+            <codePool>community</codePool>
+        </SwiftOtter_LogViewer>
+    </modules>
+</config>

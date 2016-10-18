@@ -1,0 +1,61 @@
+<config>
+    <modules>
+        <SwiftOtter_LogViewer>
+            <version>1</version>
+        </SwiftOtter_LogViewer>
+    </modules>
+
+    <global>
+        <blocks>
+            <SwiftOtter_LogViewer>
+                <class>SwiftOtter_LogViewer_Block</class>
+            </SwiftOtter_LogViewer>
+        </blocks>
+        <helpers>
+            <SwiftOtter_LogViewer>
+                <class>SwiftOtter_LogViewer_Helper</class>
+            </SwiftOtter_LogViewer>
+        </helpers>
+        <models>
+            <SwiftOtter_LogViewer>
+                <class>SwiftOtter_LogViewer_Model</class>
+                <resourceModel>SwiftOtter_LogViewer_Resource</resourceModel>
+            </SwiftOtter_LogViewer>
+
+            <SwiftOtter_LogViewer_Resource>
+                <class>SwiftOtter_LogViewer_Model_Resource</class>
+            </SwiftOtter_LogViewer_Resource>
+        </models>
+
+        <resources>
+            <SwiftOtter_LogViewer>
+                <setup>
+                    <module>SwiftOtter_LogViewer</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </SwiftOtter_LogViewer>
+        </resources>
+
+        <events>
+            <controller_front_init_before>
+                <SwiftOtter_LogViewer>
+                    <class>SwiftOtter_LogViewer/Observer</class>
+                    <method>controllerFrontInitBefore</method>
+                </SwiftOtter_LogViewer>
+            </controller_front_init_before>
+        </events>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <SwiftOtter_LogViewer>
+                    <file>SwiftOtter/AddToCart.xml</file>
+                </SwiftOtter_LogViewer>
+            </updates>
+        </layout>
+        <events>
+
+        </events>
+    </frontend>
+</config>
